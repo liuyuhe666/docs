@@ -13,3 +13,9 @@
 在线访问地址: 
 - [`https://liuyuhe666.github.io/docs`](https://liuyuhe666.github.io/docs)
 
+## License
+[GNU General Public License v3.0](https://github.com/liuyuhe666/docs/blob/main/LICENSE)
+
+## Special Thanks
+- [https://github.com/docsifyjs/docsify](https://github.com/docsifyjs/docsify)
+- [https://vercel.com](https://vercel.com/)
