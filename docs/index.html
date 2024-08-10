@@ -10,13 +10,21 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
 </head>
 <body>
-  <div id="app">加载中</div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
       name: '📖 我的知识库', //文档标题，会显示在侧边栏顶部
       repo: 'liuyuhe666/docs', // 配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件
       loadNavbar: true, // 定制导航栏
       coverpage: true, // 定制封面
+      auto2top: true, // 切换页面后自动跳转到页面顶部
+      onlyCover: true, // 只在访问主页时加载封面
+      // 定制侧边栏
+      loadSidebar: true,
+      subMaxLevel: 3,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
       // 字数统计
       count:{
         countable:true,
@@ -24,6 +32,22 @@
         color:'rgb(90,90,90)',
         language:'chinese'
       },
+      // 我们可以通过 {docsify-updated} 变量显示文档更新日期. 并且通过 formatUpdated 配置日期格式
+      formatUpdated: '{YYYY}/{MM}/{DD} {HH}:{mm}',
+      plugins: [
+        function(hook) {
+          var footer = [
+            '<hr/>',
+            '<footer>',
+            '<p align="center">Made with ❤️ by <a href="https://github.com/liuyuhe666">Liu Yuhe</a></p>',
+            '</footer>'
+          ].join('');
+          // 给每个页面的末尾加上 footer
+          hook.afterEach(function(html) {
+            return html + footer;
+          });
+        }
+      ]
     }
   </script>
   <!-- Docsify v4 -->
