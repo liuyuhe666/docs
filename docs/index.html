@@ -20,10 +20,11 @@
       auto2top: true, // 切换页面后自动跳转到页面顶部
       onlyCover: true, // 只在访问主页时加载封面
       // 定制侧边栏
-      loadSidebar: true,
+      loadSidebar: false,
       subMaxLevel: 3,
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md',
       },
       // 字数统计
       count:{
@@ -39,7 +40,7 @@
           var footer = [
             '<hr/>',
             '<footer>',
-            '<p align="center">Made with ❤️ by <a href="https://github.com/liuyuhe666">Liu Yuhe</a></p>',
+            '<p align="center"><a href="https://github.com/liuyuhe666">Made with ❤️ by Liu Yuhe</a></p>',
             '</footer>'
           ].join('');
           // 给每个页面的末尾加上 footer
@@ -60,6 +61,8 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   <!-- 字数统计 -->
   <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!-- 回到顶部 -->
+  <script src="https://cdn.jsdelivr.net/gh/lyh-workshops/back2top/dist/back2top.min.js"></script>
   <!-- 鼠标点击弹出文字 -->
   <script>
       (function () {
