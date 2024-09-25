@@ -64,6 +64,7 @@
 - [✨ 多种风格可选的萌萌计数器 | Moe Counter by Next.js](https://github.com/liuyuhe666/nextjs-moe-counter)
 - [🔎 聚合热搜 ⌈ 哔哩哔哩热搜 ⌋ ⌈ 微博热搜 ⌋ ⌈ 知乎热搜 ⌋ ⌈ 头条热搜 ⌋ ⌈ 抖音热搜 ⌋](https://github.com/liuyuhe666/agg-hot-search)
 - [📺 Obtain a SESSDATA by logging in through QR code scanning](https://github.com/liuyuhe666/bilibili-qrcode-login)
+- [🎯 一个极简的 RSS 在线浏览工具](https://github.com/liuyuhe666/easy-rss-reader)
 - [……](#我的开源项目)
 
 
