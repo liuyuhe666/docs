@@ -1,6 +1,6 @@
-Write-Output "---- 开始执行 ----"
-$t = Get-Date -Format "yyyyMMddHHmmss"
+$t = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$msg = "update at $t"
+Write-Output "$msg"
 git add .
-git commit -m "✨: $t"
+git commit -m "$msg"
 git push
-Write-Output "---- 执行结束 ----"

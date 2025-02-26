@@ -32,11 +32,11 @@
 - JVM
 - [……](#java)
 
-## 框架与中间件
+## 常用框架
 - Spring Framework
 - Spring Boot
 - MyBatis
-- [……](#框架与中间件)
+- [……](#常用框架)
 
 ## 数据库
 - MySQL
@@ -44,14 +44,14 @@
 - MongoDB
 - [……](#数据库)
 
-## 架构
-- 架构 - 基础
-- 架构 - 高并发
-- 架构 - 高可用
+## 系统设计
+- 基础
+- 高并发
+- 高可用
 - 微服务
 - 网关设计
 - 日志系统设计
-- [……](#架构)
+- [……](#系统设计)
 
 ## 开发工具
 - IDEA
@@ -60,12 +60,12 @@
 - DevOps
 - [……](#开发工具)
 
-## 我的开源项目
+## 开源项目
 - [✨ 多种风格可选的萌萌计数器 | Moe Counter by Next.js](https://github.com/liuyuhe666/nextjs-moe-counter)
 - [🔎 聚合热搜 ⌈ 哔哩哔哩热搜 ⌋ ⌈ 微博热搜 ⌋ ⌈ 知乎热搜 ⌋ ⌈ 头条热搜 ⌋ ⌈ 抖音热搜 ⌋](https://github.com/liuyuhe666/agg-hot-search)
 - [📺 Obtain a SESSDATA by logging in through QR code scanning](https://github.com/liuyuhe666/bilibili-qrcode-login)
 - [🎯 一个极简的 RSS 在线浏览工具](https://github.com/liuyuhe666/easy-rss-reader)
-- [……](#我的开源项目)
+- [……](https://my-project-topaz-chi.vercel.app)
 
 
 <div>
