@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>我的知识库</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="我的知识库" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app">加载中...</div>
+    <script>
+      window.$docsify = {
+        name: "📖 我的知识库", //文档标题，会显示在侧边栏顶部
+        repo: "liuyuhe666/docs", // 配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件
+        loadNavbar: true, // 定制导航栏
+        coverpage: true, // 定制封面
+        auto2top: true, // 切换页面后自动跳转到页面顶部
+        onlyCover: true, // 只在访问主页时加载封面
+        // 定制侧边栏
+        loadSidebar: false,
+        subMaxLevel: 3,
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md",
+          "/.*/_navbar.md": "/_navbar.md",
+        },
+        // 字数统计
+        count: {
+          countable: true,
+          fontsize: "0.9em",
+          color: "rgb(90,90,90)",
+          language: "chinese",
+        },
+        // 我们可以通过 {docsify-updated} 变量显示文档更新日期. 并且通过 formatUpdated 配置日期格式
+        formatUpdated: "{YYYY}/{MM}/{DD} {HH}:{mm}",
+        plugins: [
+          function (hook) {
+            var footer = [
+              "<hr/>",
+              "<footer>",
+              '<p align="center"><a href="https://github.com/liuyuhe666">Made with ❤️ by LiuYuhe</a></p>',
+              "</footer>",
+            ].join("");
+            // 给每个页面的末尾加上 footer
+            hook.afterEach(function (html) {
+              return html + footer;
+            });
+          },
+        ],
+      };
+    </script>
+    <!-- Docsify v4 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+    <!-- emoji -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+    <!-- 图片缩放 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <!-- 复制到剪贴板 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <!-- 字数统计 -->
+    <script src="https://unpkg.com/docsify-count/dist/countable.js"></script>
+    <!-- 鼠标点击弹出文字 -->
+    <script>
+      (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+          var a = new Array(
+            "富强",
+            "民主",
+            "文明",
+            "和谐",
+            "自由",
+            "平等",
+            "公正",
+            "法治",
+            "爱国",
+            "敬业",
+            "诚信",
+            "友善"
+          );
+
+          var heart = document.createElement("b"); //创建b元素
+          heart.onselectstart = new Function("event.returnValue=false"); //防止拖动
+
+          document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+          a_idx = (a_idx + 1) % a.length;
+          heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+          var f = 16, // 字体大小
+            x = event.clientX - f / 2, // 横坐标
+            y = event.clientY - f, // 纵坐标
+            c = randomColor(), // 随机颜色
+            a = 1, // 透明度
+            s = 1.2; // 放大缩小
+
+          var timer = setInterval(function () {
+            //添加定时器
+            if (a <= 0) {
+              document.body.removeChild(heart);
+              clearInterval(timer);
+            } else {
+              heart.style.cssText =
+                "font-size:16px;cursor: default;position: fixed;color:" +
+                c +
+                ";left:" +
+                x +
+                "px;top:" +
+                y +
+                "px;opacity:" +
+                a +
+                ";transform:scale(" +
+                s +
+                ");";
+
+              y--;
+              a -= 0.016;
+              s += 0.002;
+            }
+          }, 15);
+        };
+        // 随机颜色
+        function randomColor() {
+          return (
+            "rgb(" +
+            ~~(Math.random() * 255) +
+            "," +
+            ~~(Math.random() * 255) +
+            "," +
+            ~~(Math.random() * 255) +
+            ")"
+          );
+        }
+      })();
+    </script>
+  </body>
+</html>
