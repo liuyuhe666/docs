@@ -13,7 +13,7 @@
 在线访问地址:
 
 - [`https://liuyuhe666.github.io/docs`](https://liuyuhe666.github.io/docs)
-- [`https://docs-jwwg0okrd-lyh-projects.vercel.app`](https://docs-jwwg0okrd-lyh-projects.vercel.app)
+- [`https://docs-lyh-projects.vercel.app`](https://docs-lyh-projects.vercel.app)
 
 ## License
 
