@@ -1,1 +1,3 @@
-<!-- _sidebar.md -->
+- [🏠 主页](README)
+- [💵 赞助](buy-me-a-coffee)
+- [👨‍💻 关于](about)

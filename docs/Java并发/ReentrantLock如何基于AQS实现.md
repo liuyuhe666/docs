@@ -1,8 +1,10 @@
+# ReentrantLock 如何基于 AQS 实现
+
 `ReentrantLock` 内部有一个继承自 AQS 的同步器（`Sync`），并且根据公平性策略，有两个具体的实现：`NonfairSync`（非公平锁）和 `FairSync`（公平锁）。它们都是通过操作 AQS 的 `state` 字段来实现锁的获取与释放。
 
 我们以非公平锁为例，看看它是如何工作的：
 
-## 1. 加锁过程（lock() -> acquire(1)）
+1. 加锁过程（lock() -> acquire(1)）
 
 假设初始状态 `state = 0`。
 
@@ -24,7 +26,7 @@
 - 线程 B 也调用 `lock()`：
   - 同样的流程，CAS 抢锁失败，`tryAcquire` 也失败（因为 state 是 1，且 owner 是线程 A），最终线程 B 的 Node 被加入队列并挂起。
 
-## 2. 解锁过程（unlock() -> release(1)）
+2. 解锁过程（unlock() -> release(1)）
 
 - 线程 A 执行完，调用 `unlock()`：
   - 调用 AQS 的 `release(1)` 方法。
@@ -37,7 +39,7 @@
   - 这次因为 state 已经是 0 了，线程 B 通过 CAS 成功地将 state 设置为 1，并将 owner 设为自己，然后开始执行。
   - 线程 B 成功从队列中移除，成为新的头节点。
 
-## 公平锁与非公平锁的区别
+公平锁与非公平锁的区别
 
 两者的核心区别就在于 `tryAcquire` 方法的实现：
 

@@ -1,3 +1,5 @@
+# AQS 的核心思想
+
 AQS（AbstractQueuedSynchronizer，抽象队列同步器）是 Java 并发包（`java.util.concurrent.locks`）的核心基础组件。它的核心思想可以概括为：
 
 “一个状态位（state） + 一个 FIFO 线程等待队列（CLH 变种）”，通过模板方法模式，让子类通过继承并管理这个状态位（state）来实现各种同步器（如锁、信号量等）。
