@@ -1,2 +1,3 @@
 - [IOC、AOP 的底层原理](常用框架/IOC、AOP的底层原理.md)
+- [SpringBoot 自动配置原理](常用框架/SpringBoot自动配置原理.md)
 - [👈 返回主页](README)
