@@ -2,7 +2,7 @@
 
 ## 核心思想：约定优于配置
 
-Spring Boot 自动配置的核心思想是**约定优于配置 (Convention over Configuration)**。它预先定义了一整套的默认配置，基于你引入的依赖和现有的配置，去“猜测”你想要如何配置应用程序，并自动帮你完成这些配置。
+Spring Boot 自动配置的核心思想是约定优于配置 (Convention over Configuration)。它预先定义了一整套的默认配置，基于你引入的依赖和现有的配置，去“猜测”你想要如何配置应用程序，并自动帮你完成这些配置。
 
 例如，当你引入了 `spring-boot-starter-data-jpa` 和 H2 数据库的依赖后，Spring Boot 会自动为你配置一个内存级的 H2 数据库、一个 `JdbcTemplate` 和一个 `EntityManager`，你无需手动编写任何相关的 `@Bean` 配置。
 
