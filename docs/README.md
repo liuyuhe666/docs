@@ -69,6 +69,7 @@
 ## 分布式
 
 - [CAP 理论](分布式/CAP理论.md)
+- [分布式 ID 常见解决方案](分布式/分布式ID常见解决方案.md)
 
 <div>
     <p align="right">更新于 {docsify-updated}</p>
