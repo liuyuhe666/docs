@@ -31,6 +31,7 @@
 ## 数据结构与算法
 
 - [常见排序算法](数据结构与算法/常见排序算法.md)
+- [🚀 LeetCode 题解](https://github.com/liuyuhe666/leetcode)
 
 ## 操作系统
 
@@ -54,6 +55,7 @@
 
 ## 消息队列
 
+- [RabbitMQ vs Kafka](消息队列/RabbitMQ-vs-Kafka.md)
 - [如何保证消息顺序性](消息队列/如何保证消息顺序性.md)
 
 ## 常用框架
