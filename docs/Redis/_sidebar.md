@@ -1,3 +1,4 @@
 - [Redis 的线程模型](Redis/Redis的线程模型.md)
 - [Redis 持久化](Redis/Redis持久化.md)
+- [Redis 缓存问题分析](Redis/Redis缓存问题分析.md)
 - [👈 返回主页](README)
