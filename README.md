@@ -15,6 +15,8 @@
 - [`https://liuyuhe666.github.io/docs`](https://liuyuhe666.github.io/docs)
 - [`https://docs-lyh-projects.vercel.app`](https://docs-lyh-projects.vercel.app)
 
+如果你喜欢这个项目的话，可以点右上角 [Star](https://github.com/liuyuhe666/docs) 支持一下，你的支持是我们不断改进的动力，感谢！ `^_^`
+
 ## License
 
 [GNU General Public License v3.0](https://github.com/liuyuhe666/docs/blob/main/LICENSE)
@@ -23,3 +25,13 @@
 
 - [https://github.com/docsifyjs/docsify](https://github.com/docsifyjs/docsify)
 - [https://vercel.com](https://vercel.com/)
+
+## Star History
+
+<a href="https://www.star-history.com/#liuyuhe666/docs&Date">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=liuyuhe666/docs&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=liuyuhe666/docs&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=liuyuhe666/docs&type=Date" />
+ </picture>
+</a>
