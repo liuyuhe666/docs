@@ -1,3 +1,5 @@
 - [IOC、AOP 的底层原理](常用框架/IOC、AOP的底层原理.md)
+- [SpringMVC 的工作原理](常用框架/SpringMVC的工作原理.md)
 - [SpringBoot 自动配置原理](常用框架/SpringBoot自动配置原理.md)
+- [MyBatis 的缓存机制](常用框架/MyBatis的缓存机制.md)
 - [👈 返回主页](README)
