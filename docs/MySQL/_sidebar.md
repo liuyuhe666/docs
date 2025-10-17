@@ -1,3 +1,5 @@
 - [如何做 SQL 优化](MySQL/如何做SQL优化.md)
 - [为什么用 B+ 树而不是 B 树](MySQL/为什么用B+树而不是B树.md)
+- [分库分表](MySQL/分库分表.md)
+- [MySQL 如何实现读写分离](MySQL/如何实现读写分离.md)
 - [👈 返回主页](README)
