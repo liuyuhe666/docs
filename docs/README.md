@@ -19,6 +19,7 @@
 
 ## Java 并发
 
+- [Java 线程池的参数设置](Java并发/Java线程池的参数设置.md)
 - [CAS 的原理及缺陷](Java并发/CAS的原理及缺陷.md)
 - [AQS 的核心思想](Java并发/AQS的核心思想.md)
 - [ReentrantLock 如何基于 AQS 实现](Java并发/ReentrantLock如何基于AQS实现.md)
@@ -27,6 +28,8 @@
 
 - [JVM 数据区的组成](JVM/JVM数据区的组成.md)
 - [常用的 JVM 调优参数](JVM/常用的JVM调优参数.md)
+- [Java 逃逸分析](JVM/Java逃逸分析.md)
+- [GC 调优方法](JVM/GC调优方法.md)
 
 ## 数据结构与算法
 

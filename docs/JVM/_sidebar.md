@@ -1,3 +1,5 @@
 - [JVM 数据区的组成](JVM/JVM数据区的组成.md)
 - [常用的 JVM 调优参数](JVM/常用的JVM调优参数.md)
+- [Java 逃逸分析](JVM/Java逃逸分析.md)
+- [GC 调优方法](JVM/GC调优方法.md)
 - [👈 返回主页](README)
